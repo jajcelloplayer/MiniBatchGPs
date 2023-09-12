@@ -1,9 +1,7 @@
 # MiniBatchGPs
 Code for Paper on Minibatching Gaussian Processes
 
-Contents
-========
-
+# Contents
  * [Algorithms](#algorithms)
  * [Analysis](#analysis)
  * [Data](#data)
