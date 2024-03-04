@@ -1,5 +1,5 @@
 ####
-## MiniBatch Discrete (Large) Sets 1-25
+## MiniBatch Discrete (Large) Sets 1-50
 ####
 
 ## Set up Parallelization
