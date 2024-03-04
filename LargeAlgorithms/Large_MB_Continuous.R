@@ -1,10 +1,10 @@
 ####
-## MiniBatch Continuous (Large) Sets 1-25
+## MiniBatch Continuous (Large) Sets 1-50
 ####
 
 ## Set up Parallelization
 library(foreach)
-n_sets <- 25
+n_sets <- 50
 
 my.cluster <- parallel::makeCluster(
   n_sets, 
