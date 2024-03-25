@@ -128,7 +128,22 @@ R Scripts for fitting the Fixed-Batch minibatch algorithm (algorithm 1 in the pa
 R Scripts for fitting the a Nearest-Neighbor Vecchia Approximation algorithm to large simulated data sets. Used for comparison against the propoed algorithms in the paper. Fits all 50 data sets at once. 
 
 ## Predictions
-Code for predicting Gaussian Process values at new locations using draws from the posterior predictive distribution. 
+Code for predicting Gaussian Process values at new locations using draws from the posterior predictive distribution.
+
+#### AllPreds.sh
+Bash shell script that runs the Prediction_Script.R file for each of the 50 small simulated data sets. Used to allow multiple servers to run the models in parallel and update models.txt with which predictions still need to be run. 
+
+#### LargePreds.sh
+Bash shell script that runs the Large_Prediction_Script.R file for each of the 50 large simulated data sets. Used to allow multiple servers to run the models in parallel and update largemodels.txt with which predictions still need to be run. 
+
+#### Large_Prediction_Script.R
+R Script to create predictions for the 50 large simulated data sets. Can be very computationally intensive. Written in a way that it can be used in conjunction with LargePreds.sh to run each set of predictions sequentially. 
+
+#### Prediction_Script.R
+R Script to create predictions for the 50 small simulated data sets. Can be computationally intensive. Written in a way that it can be used in conjunction with AllPreds.sh to run each set of predictions sequentially. 
+
+#### models.txt and largemodels.txt
+Text files that show which data sets have not yet been predicted for when using AllPreds.sh and LargePreds.sh.
 
 ## RealExamples
 Code for testing the minibatch algorithms to fit Gaussian Processes to real application data. There are two application data sets, a data set of satellite temperature observations, and a data set of forest canopy height (FCH) from the spNNGP R package. 
