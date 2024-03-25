@@ -16,6 +16,6 @@ fi
 
 sed -i '1d' $1 
 
-Rscript Final_Prediction_Script.R $next
+Rscript Prediction_Script.R $next
 
 done
