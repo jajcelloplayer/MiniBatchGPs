@@ -1,6 +1,8 @@
 # MiniBatchGPs
 Code and data sets from the paper 'Minibatch Markov chain Monte Carlo Algorithms for Fitting Gaussian Processes.' (The paper is available [HERE](https://arxiv.org/pdf/2310.17766.pdf) on arXiv).
 
+If you have any questions or need any additional information, contact Jacob Johnson by emailing jajohnson66@wisc.edu.
+
 # Contents
  * [Algorithms](#algorithms)
  * [Analysis](#analysis)
